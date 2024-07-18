@@ -1,0 +1,87 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body{
+    min-height: 100%;
+    background-color:rgb(29, 56, 39) ;
+    display: grid;
+    place-items: center;
+    
+    
+
+h1{
+    font-size: 4rem;
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.calculadora {
+    background-color: #222003;
+    height: 800px;
+    width: 500px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 1.1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+
+}
+.pantalla{
+    background-color:#292703;
+    grid-column: 1 / -1;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: right;
+    border-radius: .5rem;
+    margin-bottom: 1rem ;
+    font-family: monospace;
+    font-weight: 500;
+
+
+}
+
+.btn{
+    background-color: #222003;
+    font-size: 1.2rem;
+    border-radius: .8rem;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+
+    
+
+}
+.btn:hover{
+    background-color: #2c2a04;
+    color: #8c8e0a;
+}
+
+#cero{
+    grid-column: span 2;
+}
+#igual{
+    grid-row: span 2;
+    background-color: rgb(139, 40, 40);
+
+    
+}
+#igual:hover{
+    transition: 0.2s;
+    background-color:rgb(145, 52, 52);
+}
+}
